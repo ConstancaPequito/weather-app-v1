@@ -1,0 +1,196 @@
+form {
+  width: 100%;
+}
+.main-content {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  padding: 40px;
+}
+.width-50 {
+  width: 50%;
+}
+.width-45 {
+  width: 45%;
+}
+.display-flex {
+  display: flex;
+}
+.bold {
+  font-weight: bold;
+}
+
+.locations-content {
+  display: flex;
+}
+.locations {
+  width: 75%;
+}
+
+.locations-title {
+  text-transform: uppercase;
+  border: solid 2px rgb(125, 211, 206);
+  padding: 10px;
+  text-align: center;
+}
+.locations-city {
+  border: solid 2px rgb(125, 211, 206);
+  padding: 20px;
+  text-align: center;
+  width: 18%;
+}
+.locations-city:hover {
+  cursor: pointer;
+  box-shadow: 3px 3px #ccc;
+}
+.location-buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-content {
+  display: flex;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.search-city {
+  display: flex;
+}
+
+.search-bar-input {
+  border: solid 2px #ccc;
+  text-align: center;
+  width: 100%;
+}
+.search-bar-input:hover {
+  border: solid 2px #999;
+}
+.search-buttons-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.search-buttons {
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+.search-bar-button {
+  border: solid 2px rgb(255, 240, 217);
+}
+.use-location-button {
+  border: solid 2px rgb(255, 165, 34);
+}
+.search-bar-button:hover,
+.use-location-button:hover {
+  cursor: pointer;
+  box-shadow: 3px 3px #ccc;
+}
+
+.current-content {
+}
+.current-forecast-card {
+  width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.current-temperature {
+  display: flex;
+  align-items: flex-start;
+  color: rgba(10, 0, 0, 0.8);
+}
+.current-degrees {
+  font-size: 80px;
+  font-weight: bold;
+  width: 150px;
+  text-align: right;
+}
+.temperature {
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+.temperature-button {
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: rgba(10, 0, 0, 0);
+  border-color: lightgrey;
+  color: rgba(10, 0, 0, 0.7);
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.temperature-button:hover {
+  background-color: rgba(245, 198, 97, 0.562);
+}
+
+.current-forecast-details {
+  font-size: 18px;
+  color: rgba(10, 0, 0, 0.7);
+}
+
+.current-location-card {
+  display: flex;
+  flex-direction: column;
+  color: rgba(10, 0, 0, 0.7);
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 70%;
+  width: 70%;
+  align-items: flex-end;
+}
+.current-location {
+  font-size: 50px;
+  color: rgba(10, 0, 0, 0.8);
+}
+.current-date {
+  padding-top: 20px;
+  font-size: 24px;
+  color: rgba(10, 0, 0, 0.8);
+  margin-left: 40px;
+}
+.current-weather {
+  padding-top: 10px;
+  font-size: 24px;
+  color: rgba(10, 0, 0, 0.8);
+  margin-left: 40px;
+}
+
+.week-content {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+.week-day-card {
+  padding: 10px;
+  text-align: center;
+}
+.week-day-card-title {
+  font-weight: bold;
+  color: rgb(125, 211, 206);
+  font-size: 14px;
+  padding: 10px;
+}
+.week-day-card-image {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.week-day-card-degrees {
+  display: flex;
+  justify-content: center;
+}
+.week-day-card-degrees-max {
+  font-size: 14px;
+  font-weight: bold;
+}
+.week-day-card-degrees-min {
+  font-size: 14px;
+  margin-left: 10px;
+}

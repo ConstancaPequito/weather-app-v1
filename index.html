@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homework Week 5</title>
+  <link rel="stylesheet" href="src/styles.css">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+  <div class="main-content">
+
+    <div class="locations-content">
+      <div class="width-50">
+
+        <div class="locations">
+
+          <div class="locations-title">
+            My Frequent Locations
+          </div>
+
+          <div class="location-buttons">
+            <div class="locations-city">
+              Amsterdam
+            </div>
+            <div class="locations-city">
+              Utrecht
+            </div>
+            <div class="locations-city">
+              Lisbon
+            </div>
+            <div class="locations-city">
+              Peniche
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="search-content width-50">
+        <form id="search-form" class="display-flex">
+          <div class="search-city width-50">
+            <input class="search-bar-input" placeholder="Enter a city" id="search-input"></input>
+          </div>
+
+          <div class="search-buttons-wrapper width-50">
+            <div class="width-45">
+              <button type="submit" class="search-buttons search-bar-button" id="location-search">
+                Search
+              </button>
+            </div>
+            <div class="width-45">
+              <button type="button" class="search-buttons use-location-button" id="my-location-button">
+                Use my location
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="current-content display-flex">
+
+      <div class="width-50">
+        <div class="current-forecast-card display-flex">
+
+          <div class="current-temperature display-flex">
+            <div class="current-degrees">
+              16
+            </div>
+            <div class="temperature">
+              <button id="celcius-button" class="temperature-button">
+                ºC
+              </button>
+            </div>
+            <div class="temperature">
+              <button id="fahrenheit-button" class="temperature-button">
+                ºF
+              </button>
+            </div>
+          </div>
+
+          <div class="current-image">
+            <img src="images/sun.png" width="120px">
+          </div>
+
+          <div class="current-forecast-details">
+            <!-- Precipitation: 2%  not considered because it doesn't exist on the API -->
+            <li id="humidity">
+              Humidity
+            </li>
+            <li id="wind">
+              Wind: 6 km/h
+            </li>
+          </div>
+        </div>
+      </div>
+
+      <div class="width-50">
+        <div class="location-content">
+
+          <div class="current-location-card display-flex width-50">
+
+            <div class="current-location" id="current-location">
+              Barcelona
+            </div>
+            <div class="current-date" id="current-date">
+              Sunday 14/11 08:18
+            </div>
+            <div class="current-weather" id="description">
+              Sunny
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="week-content">
+      <div class="week-day-card">
+        <div class="week-day-card-title">
+          Monday
+        </div>
+        <div class="week-day-card-image">
+          <img src="images/sun.png" width="100px">
+        </div>
+        <div class="week-day-card-degrees">
+          <div class="week-day-card-degrees-max">
+            31ºC
+          </div>
+          <div class="week-day-card-degrees-min">
+            16ºC
+          </div>
+        </div>
+      </div>
+
+      <div class="week-day-card">
+        <div class="week-day-card-title">
+          Tuesday
+        </div>
+        <div class="week-day-card-image">
+          <img src="images/sunclouds.png" width="100px">
+        </div>
+        <div class="week-day-card-degrees">
+          <div class="week-day-card-degrees-max">
+            17ºC
+          </div>
+          <div class="week-day-card-degrees-min">
+            13ºC
+          </div>
+        </div>
+      </div>
+
+      <div class="week-day-card">
+        <div class="week-day-card-title">
+          Wednesday
+        </div>
+        <div class="week-day-card-image">
+          <img src="images/clouds.jpeg" width=120px>
+        </div>
+        <div class="week-day-card-degrees">
+          <div class="week-day-card-degrees-max">
+            16ºC
+          </div>
+          <div class="week-day-card-degrees-min">
+            13ºC
+          </div>
+        </div>
+      </div>
+
+      <div class="week-day-card">
+        <div class="week-day-card-title">
+          Thursday
+        </div>
+        <div class="week-day-card-image">
+          <img src="images/rain.png" width=110px>
+        </div>
+        <div class="week-day-card-degrees">
+          <div class="week-day-card-degrees-max">
+            18ºC
+          </div>
+          <div class="week-day-card-degrees-min">
+            14ºC
+          </div>
+        </div>
+      </div>
+
+      <div class="week-day-card">
+        <div class="week-day-card-title">
+          Friday
+        </div>
+        <div class="week-day-card-image">
+          <img src="images/sunclouds.png" width="100px">
+        </div>
+        <div class="week-day-card-degrees">
+          <div class="week-day-card-degrees-max">
+            19ºC
+          </div>
+          <div class="week-day-card-degrees-min">
+            16ºC
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="JS/weather.js"></script>
+
+</body>
+
+</html>
